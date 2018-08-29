@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<parameters 	min_initial_choice_counter_value="3" 
+max_initial_choice_counter_value="5" 
+max_sequence_size="7" 
+criterion_0_required_value="4" 
+criterion_1_required_value="2" />
+
+	<choices>
+        	<choice criterion_0="1" criterion_1="0" max_instance_number="4" /> <!--(1, 0) -->
+        	<choice criterion_0="2" criterion_1="0" max_instance_number="5" /> <!--(2, 0) -->
+        	<choice criterion_0="4" criterion_1="0" max_instance_number="5" /> <!--(4, 0) -->
+        	<choice criterion_0="0" criterion_1="1" max_instance_number="4" /> <!--(0, 1) -->
+        	<choice criterion_0="0" criterion_1="2" max_instance_number="5" /> <!--(0, 2) -->
+        	<choice criterion_0="0" criterion_1="3" max_instance_number="5" /> <!--(0, 3) -->
+        
+		<!-- Challenge -->
+        	<choice criterion_0="0" criterion_1="0" additional_choices_number="1" max_instance_number="1" /> <!-- (+ 1 choice) -->         
+<choice criterion_0="0" criterion_1="0" additional_choices_number="2" max_instance_number="2" /> <!-- (+ 2 choices) -->
+    	</choices>
+</root>
