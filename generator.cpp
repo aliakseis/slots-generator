@@ -81,7 +81,7 @@ void startElement(void *data, const char *element, const char **attribute)
         for (; *attribute != nullptr; attribute += 2)
         {
             int value = 0;
-            if (sscanf(*(attribute + 1), "%d", &value) != 1)
+            if (sscanf_s(*(attribute + 1), "%d", &value) != 1)
                 throw runtime_error("Parameters attribute is not an integer.");
 
             GeneratorSettings& object = *settings;
@@ -101,7 +101,7 @@ void startElement(void *data, const char *element, const char **attribute)
         for (; *attribute != nullptr; attribute += 2)
         {
             int value = 0;
-            if (sscanf(*(attribute + 1), "%d", &value) != 1)
+            if (sscanf_s(*(attribute + 1), "%d", &value) != 1)
                 throw runtime_error("Choice attribute is not an integer.");
 
             SET_PARAMETER(criterion_0)
