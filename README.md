@@ -1,5 +1,7 @@
 # slots-generator
 
+![Lord of lords](lord_of_lords.png)
+
 ```
 Di thie,
 Thieshue,
